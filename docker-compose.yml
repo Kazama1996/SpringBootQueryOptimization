@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql-container
+    env_file:
+      - ./.env.${ENV} # 使用環境變數來決定載入哪一個 .env 檔案
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - app-network
+
+
+  springboot-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: springboot-app-container
+    env_file:
+      - ./.env.${ENV} # 使用相同的環境變數
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mysql
+    networks:
+      - app-network
+    restart: always
+
+volumes:
+  mysql_data:
+
+networks:
+  app-network:
+    driver: bridge

@@ -1,0 +1,24 @@
+-- CREATE DATABASE IF NOT EXISTS dev;
+-- CREATE DATABASE IF NOT EXISTS test;
+-- CREATE DATABASE IF NOT EXISTS production;
+
+
+-- GRANT ALL PRIVILEGES ON dev.* TO 'user_dev'@'%';
+-- GRANT ALL PRIVILEGES ON test.* TO 'user_test'@'%';
+-- GRANT ALL PRIVILEGES ON production.* TO 'user_prod'@'%';
+
+
+CREATE DATABASE IF NOT EXISTS dev;
+CREATE DATABASE IF NOT EXISTS test;
+CREATE DATABASE IF NOT EXISTS production;
+
+CREATE USER IF NOT EXISTS 'user_dev'@'%' IDENTIFIED BY 'admin12345';
+CREATE USER IF NOT EXISTS 'user_test'@'%' IDENTIFIED BY 'admin12345';
+CREATE USER IF NOT EXISTS 'user_prod'@'%' IDENTIFIED BY 'admin12345';
+
+GRANT ALL PRIVILEGES ON dev.* TO 'user_dev'@'%';
+GRANT ALL PRIVILEGES ON test.* TO 'user_test'@'%';
+GRANT ALL PRIVILEGES ON production.* TO 'user_prod'@'%';
+
+FLUSH PRIVILEGES;
+
