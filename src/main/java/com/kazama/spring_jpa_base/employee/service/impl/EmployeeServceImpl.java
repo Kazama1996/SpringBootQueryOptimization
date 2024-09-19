@@ -1,4 +1,5 @@
-package com.kazama.spring_jpa_base.service.impl;
+package com.kazama.spring_jpa_base.employee.service.impl;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -8,11 +9,11 @@ import java.util.List;
 import java.util.Random;
 
 import com.kazama.spring_jpa_base.common.utils.DataInitializer;
-import com.kazama.spring_jpa_base.dto.CreateUserRequestDto;
-import com.kazama.spring_jpa_base.entity.Employee;
-import com.kazama.spring_jpa_base.entity.QEmployee;
-import com.kazama.spring_jpa_base.repository.EmployeeRepository;
-import com.kazama.spring_jpa_base.service.EmployeeService;
+import com.kazama.spring_jpa_base.employee.dto.CreateUserRequestDto;
+import com.kazama.spring_jpa_base.employee.entity.Employee;
+import com.kazama.spring_jpa_base.employee.entity.QEmployee;
+import com.kazama.spring_jpa_base.employee.repository.EmployeeRepository;
+import com.kazama.spring_jpa_base.employee.service.EmployeeService;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 
 

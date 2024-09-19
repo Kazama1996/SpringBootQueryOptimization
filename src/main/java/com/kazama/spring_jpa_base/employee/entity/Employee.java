@@ -1,4 +1,5 @@
-package com.kazama.spring_jpa_base.entity;
+package com.kazama.spring_jpa_base.employee.entity;
+
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

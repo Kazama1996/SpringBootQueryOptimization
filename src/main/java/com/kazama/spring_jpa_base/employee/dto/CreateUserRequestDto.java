@@ -1,4 +1,4 @@
-package com.kazama.spring_jpa_base.dto;
+package com.kazama.spring_jpa_base.employee.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

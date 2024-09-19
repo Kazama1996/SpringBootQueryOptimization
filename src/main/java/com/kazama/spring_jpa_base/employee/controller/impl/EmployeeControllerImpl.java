@@ -1,10 +1,5 @@
-package com.kazama.spring_jpa_base.controller.impl;
+package com.kazama.spring_jpa_base.employee.controller.impl;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatusCode;
@@ -15,10 +10,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.kazama.spring_jpa_base.controller.EmployeeController;
-import com.kazama.spring_jpa_base.dto.CreateUserRequestDto;
-import com.kazama.spring_jpa_base.entity.Employee;
-import com.kazama.spring_jpa_base.service.EmployeeService;
+import com.kazama.spring_jpa_base.employee.controller.EmployeeController;
+import com.kazama.spring_jpa_base.employee.dto.CreateUserRequestDto;
+import com.kazama.spring_jpa_base.employee.service.EmployeeService;
 
 @RestController
 public class EmployeeControllerImpl implements EmployeeController {
@@ -51,6 +45,7 @@ public class EmployeeControllerImpl implements EmployeeController {
         return ResponseEntity.ok().body("You create "+numOfUser+"employees");
 
     }
+
 
    
 
