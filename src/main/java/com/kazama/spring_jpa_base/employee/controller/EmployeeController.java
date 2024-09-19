@@ -1,12 +1,9 @@
-package com.kazama.spring_jpa_base.controller;
+package com.kazama.spring_jpa_base.employee.controller;
 
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
 
-import com.kazama.spring_jpa_base.dto.CreateUserRequestDto;
-import com.kazama.spring_jpa_base.entity.Employee;
+import com.kazama.spring_jpa_base.employee.dto.CreateUserRequestDto;
 
 public interface EmployeeController {
     

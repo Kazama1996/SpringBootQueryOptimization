@@ -1,12 +1,13 @@
-package com.kazama.spring_jpa_base.repository.impl;
+package com.kazama.spring_jpa_base.employee.repository.impl;
+
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.kazama.spring_jpa_base.entity.Employee;
-import com.kazama.spring_jpa_base.entity.QEmployee;
-import com.kazama.spring_jpa_base.repository.EmployeeRepositoryCustom;
+import com.kazama.spring_jpa_base.employee.entity.Employee;
+import com.kazama.spring_jpa_base.employee.entity.QEmployee;
+import com.kazama.spring_jpa_base.employee.repository.EmployeeRepositoryCustom;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 
 import lombok.RequiredArgsConstructor;

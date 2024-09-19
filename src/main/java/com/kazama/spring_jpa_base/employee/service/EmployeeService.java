@@ -1,9 +1,9 @@
-package com.kazama.spring_jpa_base.service;
+package com.kazama.spring_jpa_base.employee.service;
 
 import java.util.List;
 
-import com.kazama.spring_jpa_base.dto.CreateUserRequestDto;
-import com.kazama.spring_jpa_base.entity.Employee;
+import com.kazama.spring_jpa_base.employee.dto.CreateUserRequestDto;
+import com.kazama.spring_jpa_base.employee.entity.Employee;
 
 public interface EmployeeService {
     
