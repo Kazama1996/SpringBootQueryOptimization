@@ -1,8 +1,6 @@
 package com.kazama.spring_jpa_base.pagination.service.impl;
 
-import java.util.Collection;
 import java.util.List;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 import com.kazama.spring_jpa_base.common.utils.PaginationUtils;
@@ -10,7 +8,6 @@ import com.kazama.spring_jpa_base.employee.entity.Employee;
 import com.kazama.spring_jpa_base.employee.entity.QEmployee;
 import com.kazama.spring_jpa_base.pagination.dto.limitoffset.LimitOffsetRequestDto;
 import com.kazama.spring_jpa_base.pagination.service.PaginationService;
-import com.querydsl.core.QueryResults;
 import com.querydsl.core.Tuple;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 
